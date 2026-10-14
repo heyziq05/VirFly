@@ -1,0 +1,1619 @@
+{
+  "dataset": {
+    "name": "FlyWire FAFB",
+    "version": "v783",
+    "full_name": "Female Adult Fly Brain (FAFB), FlyWire Codex export",
+    "synapse_table_source": "connections_princeton.csv (Princeton/Seung Lab synapse table, FlyWire consortium)",
+    "citation": "Dorkenwald et al. 2024, Nature \u2014 'Neuronal wiring diagram of an adult brain' (FlyWire FAFB); Schlegel et al. \u2014 FlyWire hierarchical annotations; Codex (codex.flywire.ai)",
+    "processed_by": "preprocess_flywire.py (this repo) \u2014 a local, documented aggregation step, not an official FlyWire product"
+  },
+  "generated_by": "scripts/preprocess_flywire.py",
+  "coverage": {
+    "total_traced_neurons": 139255,
+    "neurons_in_displayed_modules": 121511,
+    "neurons_in_displayed_modules_pct": 87.3,
+    "total_raw_connections_considered": 5342446,
+    "connections_retained_module_to_module": 3158968
+  },
+  "modules": [
+    {
+      "id": "olfactory_al",
+      "label": "Olfactory (Antennal Lobe)",
+      "category": "sensory",
+      "desc": "Detects fruit and rubbish scent molecules picked up by the antennae.",
+      "neuron_count": 3407,
+      "dominant_neurotransmitter": "ACH",
+      "sample_neurons": [
+        {
+          "root_id": "720575940603911340",
+          "name": "AL.1257",
+          "cell_type": "ORN_VM5v",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940604008160",
+          "name": "AL.531",
+          "cell_type": "CB1686",
+          "nt_type": "GABA"
+        },
+        {
+          "root_id": "720575940604662700",
+          "name": "AL.808",
+          "cell_type": "CB1668",
+          "nt_type": null
+        },
+        {
+          "root_id": "720575940604675430",
+          "name": "AL.1083",
+          "cell_type": "ORN_VM7d",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940604704870",
+          "name": "AL.927",
+          "cell_type": "ORN_VC4",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940605078560",
+          "name": "AL.382",
+          "cell_type": "v2LNX01",
+          "nt_type": "GLUT"
+        }
+      ]
+    },
+    {
+      "id": "gustatory",
+      "label": "Gustatory (Taste)",
+      "category": "sensory",
+      "desc": "Responds to taste on contact -- sugar, bitterness, spoilage.",
+      "neuron_count": 408,
+      "dominant_neurotransmitter": "ACH",
+      "sample_neurons": [
+        {
+          "root_id": "720575940609369180",
+          "name": "GNG.4714",
+          "cell_type": "LB3",
+          "nt_type": null
+        },
+        {
+          "root_id": "720575940609533230",
+          "name": "GNG.2522",
+          "cell_type": "claw_tpGRN",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940610259370",
+          "name": "GNG.2867",
+          "cell_type": "LB1a",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940610474610",
+          "name": "GNG.2712",
+          "cell_type": "claw_tpGRN",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940610481370",
+          "name": "GNG.2711",
+          "cell_type": "LB1c",
+          "nt_type": null
+        },
+        {
+          "root_id": "720575940610773090",
+          "name": "GNG.2397",
+          "cell_type": "LB1c",
+          "nt_type": "SER"
+        }
+      ]
+    },
+    {
+      "id": "visual",
+      "label": "Visual (Optic Lobes)",
+      "category": "sensory",
+      "desc": "Detects motion, light and nearby objects, including the player's hand.",
+      "neuron_count": 97467,
+      "dominant_neurotransmitter": "ACH",
+      "sample_neurons": [
+        {
+          "root_id": "720575940599457990",
+          "name": "ME.LOP.4824",
+          "cell_type": "T4b",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940599763910",
+          "name": "LO.LOP.2934",
+          "cell_type": "T5b",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940600623020",
+          "name": "ME.31729",
+          "cell_type": "Dm3q",
+          "nt_type": "GLUT"
+        },
+        {
+          "root_id": "720575940602790610",
+          "name": "LO.LOP.2019",
+          "cell_type": "T5c",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940602857440",
+          "name": "ME.LO.764",
+          "cell_type": "Tm8a",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940603067360",
+          "name": "LO.PLP.210",
+          "cell_type": "LC13",
+          "nt_type": "ACH"
+        }
+      ]
+    },
+    {
+      "id": "mechanosensory",
+      "label": "Mechanosensory / Ambient",
+      "category": "sensory",
+      "desc": "Wind, touch, humidity and temperature -- general environmental awareness.",
+      "neuron_count": 2777,
+      "dominant_neurotransmitter": "ACH",
+      "sample_neurons": [
+        {
+          "root_id": "720575940602720940",
+          "name": "SAD.532",
+          "cell_type": "JO-CA",
+          "nt_type": null
+        },
+        {
+          "root_id": "720575940603183840",
+          "name": "GNG.4698",
+          "cell_type": "BM_InOm",
+          "nt_type": null
+        },
+        {
+          "root_id": "720575940604901310",
+          "name": "GNG.SAD.49",
+          "cell_type": "JO-F",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940605213100",
+          "name": "NO_CONS.29",
+          "cell_type": "JO-DA",
+          "nt_type": null
+        },
+        {
+          "root_id": "720575940605219500",
+          "name": "NO_CONS.30",
+          "cell_type": "JO-B",
+          "nt_type": null
+        },
+        {
+          "root_id": "720575940605291040",
+          "name": "GNG.4224",
+          "cell_type": "BM_InOm",
+          "nt_type": null
+        }
+      ]
+    },
+    {
+      "id": "lateral_horn",
+      "label": "Lateral Horn (Innate Valence)",
+      "category": "associative",
+      "desc": "Hard-wired, unlearned attraction/aversion to smells -- instinct, not memory.",
+      "neuron_count": 559,
+      "dominant_neurotransmitter": "GLUT",
+      "sample_neurons": [
+        {
+          "root_id": "720575940604663520",
+          "name": "LH.231",
+          "cell_type": "CB2861",
+          "nt_type": null
+        },
+        {
+          "root_id": "720575940610118570",
+          "name": "SLP.445",
+          "cell_type": "LHCENT13_d",
+          "nt_type": "GABA"
+        },
+        {
+          "root_id": "720575940610762850",
+          "name": "LH.557",
+          "cell_type": "CB2463",
+          "nt_type": "GLUT"
+        },
+        {
+          "root_id": "720575940612071130",
+          "name": "LH.705",
+          "cell_type": "CB2918",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940614478230",
+          "name": "LH.678",
+          "cell_type": "LHPD3a5",
+          "nt_type": "GLUT"
+        },
+        {
+          "root_id": "720575940614636450",
+          "name": "LH.612",
+          "cell_type": "CB1258",
+          "nt_type": null
+        }
+      ]
+    },
+    {
+      "id": "mb_kenyon",
+      "label": "Mushroom Body - Kenyon Cells (Memory)",
+      "category": "associative",
+      "desc": "Sparse coding of odor identity; the searchable memory core of the fly brain.",
+      "neuron_count": 5177,
+      "dominant_neurotransmitter": "ACH",
+      "sample_neurons": [
+        {
+          "root_id": "720575940602564320",
+          "name": "MB_CA.MB_ML.2539",
+          "cell_type": "KCg-m",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940602815200",
+          "name": "MB_CA.MB_ML.229",
+          "cell_type": "KCab",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940603673120",
+          "name": "MB_CA.MB_VL.104",
+          "cell_type": "KCab",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940603882720",
+          "name": "MB_CA.MB_ML.1699",
+          "cell_type": "KCg-m",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940604050110",
+          "name": "MB_CA.MB_ML.148",
+          "cell_type": "KCab",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940604103200",
+          "name": "MB_CA.MB_ML.3021",
+          "cell_type": "KCg-m",
+          "nt_type": "ACH"
+        }
+      ]
+    },
+    {
+      "id": "mb_dan",
+      "label": "Mushroom Body - Dopamine (Reward Signal)",
+      "category": "associative",
+      "desc": "Dopaminergic neurons that write reward/punishment signals into memory.",
+      "neuron_count": 331,
+      "dominant_neurotransmitter": "DA",
+      "sample_neurons": [
+        {
+          "root_id": "720575940604479590",
+          "name": "SMP.CRE.166",
+          "cell_type": "PAM08",
+          "nt_type": "DA"
+        },
+        {
+          "root_id": "720575940604728800",
+          "name": "CRE.297",
+          "cell_type": "PAM13",
+          "nt_type": null
+        },
+        {
+          "root_id": "720575940605891040",
+          "name": "MB_PED.MB_ML.8",
+          "cell_type": "PAM11",
+          "nt_type": "DA"
+        },
+        {
+          "root_id": "720575940607511900",
+          "name": "SMP.MB_ML.16",
+          "cell_type": "PAM06",
+          "nt_type": "DA"
+        },
+        {
+          "root_id": "720575940611789810",
+          "name": "MB_ML.231",
+          "cell_type": "PAM12",
+          "nt_type": "DA"
+        },
+        {
+          "root_id": "720575940613155490",
+          "name": "SMP.MB_ML.60",
+          "cell_type": "PAM04",
+          "nt_type": "DA"
+        }
+      ]
+    },
+    {
+      "id": "mb_output",
+      "label": "Mushroom Body - MBONs (Decision Output)",
+      "category": "associative",
+      "desc": "Reads out learned valence and biases approach vs. avoidance.",
+      "neuron_count": 100,
+      "dominant_neurotransmitter": "ACH",
+      "sample_neurons": [
+        {
+          "root_id": "720575940607155890",
+          "name": "CRE.LAL.1",
+          "cell_type": "MBON26",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940608304220",
+          "name": "MB_VL.LH.3",
+          "cell_type": "MBON15-like",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940612196850",
+          "name": "MB_VL.LH.4",
+          "cell_type": "MBON15-like",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940617552340",
+          "name": "MB_ML.SIP.1",
+          "cell_type": "MBON02",
+          "nt_type": "GABA"
+        },
+        {
+          "root_id": "720575940621164720",
+          "name": "MB_ML.CRE.1",
+          "cell_type": "MBON05",
+          "nt_type": null
+        },
+        {
+          "root_id": "720575940623001480",
+          "name": "MB_VL.SMP.10",
+          "cell_type": "MBON12",
+          "nt_type": "ACH"
+        }
+      ]
+    },
+    {
+      "id": "cx_navigation",
+      "label": "Central Complex - Navigation",
+      "category": "state",
+      "desc": "Heading, orientation and spatial memory (ellipsoid body / protocerebral bridge).",
+      "neuron_count": 999,
+      "dominant_neurotransmitter": "ACH",
+      "sample_neurons": [
+        {
+          "root_id": "720575940603094700",
+          "name": "EB.266",
+          "cell_type": "ER3a_a",
+          "nt_type": "GABA"
+        },
+        {
+          "root_id": "720575940603747360",
+          "name": "NO.FB.14",
+          "cell_type": "PFNa",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940604195360",
+          "name": "SMP.2287",
+          "cell_type": "FS4A",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940604967270",
+          "name": "EB.338",
+          "cell_type": "ER2",
+          "nt_type": "GABA"
+        },
+        {
+          "root_id": "720575940605591730",
+          "name": "NO.204",
+          "cell_type": "PFNp",
+          "nt_type": null
+        },
+        {
+          "root_id": "720575940605889760",
+          "name": "SPS.PB.1",
+          "cell_type": "IbSpsP",
+          "nt_type": "ACH"
+        }
+      ]
+    },
+    {
+      "id": "cx_sleep",
+      "label": "Central Complex - Sleep / Arousal",
+      "category": "state",
+      "desc": "Fan-shaped-body circuitry linked to sleep pressure and rest drive.",
+      "neuron_count": 1878,
+      "dominant_neurotransmitter": "ACH",
+      "sample_neurons": [
+        {
+          "root_id": "720575940602747360",
+          "name": "FB.382",
+          "cell_type": "hDeltaJ",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940603925280",
+          "name": "FB.1213",
+          "cell_type": "FS2",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940604065470",
+          "name": "FB.1016",
+          "cell_type": "FC1D",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940604240230",
+          "name": "FB.SMP.60",
+          "cell_type": "FS3",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940604349630",
+          "name": "FB.458",
+          "cell_type": "FB6R",
+          "nt_type": null
+        },
+        {
+          "root_id": "720575940604481760",
+          "name": "FB.205",
+          "cell_type": "FB4P_a",
+          "nt_type": "GLUT"
+        }
+      ]
+    },
+    {
+      "id": "neurosecretory",
+      "label": "Neurosecretory (Hunger Hormones)",
+      "category": "state",
+      "desc": "Pars intercerebralis / lateralis -- insulin-like and diuretic hormone signalling; the closest real analogue to a hunger/satiety center.",
+      "neuron_count": 74,
+      "dominant_neurotransmitter": "SER",
+      "sample_neurons": [
+        {
+          "root_id": "720575940603765280",
+          "name": "SMP.1246",
+          "cell_type": "m_NSC_DILP",
+          "nt_type": null
+        },
+        {
+          "root_id": "720575940612923390",
+          "name": "SMP.1480",
+          "cell_type": "m_NSC_DILP",
+          "nt_type": null
+        },
+        {
+          "root_id": "720575940615911380",
+          "name": "SMP.1925",
+          "cell_type": "m_NSC_DILP",
+          "nt_type": null
+        },
+        {
+          "root_id": "720575940619186240",
+          "name": "SMP.2215",
+          "cell_type": "l_NSC_unknown",
+          "nt_type": null
+        },
+        {
+          "root_id": "720575940620926740",
+          "name": "SMP.2213",
+          "cell_type": "l_NSC_unknown",
+          "nt_type": null
+        },
+        {
+          "root_id": "720575940622872870",
+          "name": "PRW.181",
+          "cell_type": "m_NSC_DH44",
+          "nt_type": null
+        }
+      ]
+    },
+    {
+      "id": "integration_hub",
+      "label": "Higher-Order Integration (Curiosity)",
+      "category": "state",
+      "desc": "Superior protocerebrum convergence zones (SMP/SLP/SIP) integrating multiple senses -- used here as the seat of novelty/exploration drive.",
+      "neuron_count": 6859,
+      "dominant_neurotransmitter": "ACH",
+      "sample_neurons": [
+        {
+          "root_id": "720575940603082720",
+          "name": "SLP.1606",
+          "cell_type": "CB2269",
+          "nt_type": "GLUT"
+        },
+        {
+          "root_id": "720575940603587500",
+          "name": "SIP.CRE.15",
+          "cell_type": "SIP003_b",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940603974880",
+          "name": "SMP.2084",
+          "cell_type": "SMP332b",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940604102880",
+          "name": "SMP.993",
+          "cell_type": "SMP461",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940604332460",
+          "name": "SMP.FLA.41",
+          "cell_type": "CB2423",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940604486880",
+          "name": "SMP.579",
+          "cell_type": "SMP123b",
+          "nt_type": "GLUT"
+        }
+      ]
+    },
+    {
+      "id": "arousal_stress",
+      "label": "Arousal / Stress (Octopamine)",
+      "category": "state",
+      "desc": "Octopaminergic neurons -- the fly's diffuse 'fight or flight' neuromodulatory system.",
+      "neuron_count": 72,
+      "dominant_neurotransmitter": "OCT",
+      "sample_neurons": [
+        {
+          "root_id": "720575940608339330",
+          "name": "UNASGD.8",
+          "cell_type": "R7",
+          "nt_type": "OCT"
+        },
+        {
+          "root_id": "720575940624394790",
+          "name": "AVLP.36",
+          "cell_type": "OA-VUMa8",
+          "nt_type": "OCT"
+        },
+        {
+          "root_id": "720575940625489160",
+          "name": "GNG.PRW.34",
+          "cell_type": "DNge150",
+          "nt_type": "OCT"
+        },
+        {
+          "root_id": "720575940628790780",
+          "name": "LA.4133",
+          "cell_type": "R1-6",
+          "nt_type": "OCT"
+        },
+        {
+          "root_id": "720575940633579360",
+          "name": "PRW.397",
+          "cell_type": "ENS5",
+          "nt_type": "OCT"
+        },
+        {
+          "root_id": "720575940644745120",
+          "name": "SAD.FB.2",
+          "cell_type": "OA-VPM3",
+          "nt_type": "OCT"
+        }
+      ]
+    },
+    {
+      "id": "descending_motor",
+      "label": "Descending Motor Command",
+      "category": "motor",
+      "desc": "Brain-to-body commands driving approach, avoidance, landing, hovering and crawling.",
+      "neuron_count": 1375,
+      "dominant_neurotransmitter": "ACH",
+      "sample_neurons": [
+        {
+          "root_id": "720575940602864300",
+          "name": "IPS.867",
+          "cell_type": "DNpe008",
+          "nt_type": null
+        },
+        {
+          "root_id": "720575940603580960",
+          "name": "IPS.GNG.118",
+          "cell_type": "DNpe054",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940605041330",
+          "name": "SPS.GNG.65",
+          "cell_type": "DNp16",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940605300140",
+          "name": "FLA.30",
+          "cell_type": "DNg26",
+          "nt_type": null
+        },
+        {
+          "root_id": "720575940606112940",
+          "name": "VES.22",
+          "cell_type": "DNg13",
+          "nt_type": null
+        },
+        {
+          "root_id": "720575940607641010",
+          "name": "GNG.998",
+          "cell_type": "CB0918",
+          "nt_type": null
+        }
+      ]
+    },
+    {
+      "id": "feeding_motor",
+      "label": "Feeding Motor (Proboscis)",
+      "category": "motor",
+      "desc": "Motor neurons controlling proboscis extension and ingestion.",
+      "neuron_count": 28,
+      "dominant_neurotransmitter": "ACH",
+      "sample_neurons": [
+        {
+          "root_id": "720575940618539810",
+          "name": "GNG.342",
+          "cell_type": "CB0915",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940620025620",
+          "name": "GNG.1383",
+          "cell_type": "MN10",
+          "nt_type": "ACH"
+        },
+        {
+          "root_id": "720575940631999080",
+          "name": "GNG.375",
+          "cell_type": "MNx01",
+          "nt_type": "GLUT"
+        },
+        {
+          "root_id": "720575940646274670",
+          "name": "PRW.143",
+          "cell_type": "MNx03",
+          "nt_type": null
+        },
+        {
+          "root_id": "720575940632304711",
+          "name": "GNG.510",
+          "cell_type": "MNx01",
+          "nt_type": "GLUT"
+        },
+        {
+          "root_id": "720575940624967612",
+          "name": "GNG.1537",
+          "cell_type": "CB0715",
+          "nt_type": null
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "visual",
+      "target": "visual",
+      "weight": 24776496,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "olfactory_al",
+      "target": "olfactory_al",
+      "weight": 1632140,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "integration_hub",
+      "target": "integration_hub",
+      "weight": 1379036,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "cx_sleep",
+      "target": "cx_sleep",
+      "weight": 775463,
+      "dominant_nt": "GLUT"
+    },
+    {
+      "source": "cx_navigation",
+      "target": "cx_navigation",
+      "weight": 517447,
+      "dominant_nt": "GABA"
+    },
+    {
+      "source": "mb_kenyon",
+      "target": "mb_output",
+      "weight": 481767,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "descending_motor",
+      "target": "descending_motor",
+      "weight": 387997,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "olfactory_al",
+      "target": "mb_kenyon",
+      "weight": 366946,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "visual",
+      "target": "descending_motor",
+      "weight": 198071,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "mb_output",
+      "target": "mb_kenyon",
+      "weight": 170421,
+      "dominant_nt": "GABA"
+    },
+    {
+      "source": "mb_kenyon",
+      "target": "mb_kenyon",
+      "weight": 150839,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "mechanosensory",
+      "target": "descending_motor",
+      "weight": 141139,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "olfactory_al",
+      "target": "lateral_horn",
+      "weight": 139971,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "olfactory_al",
+      "target": "integration_hub",
+      "weight": 126928,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "cx_navigation",
+      "target": "cx_sleep",
+      "weight": 81780,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "mb_output",
+      "target": "integration_hub",
+      "weight": 79427,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "mechanosensory",
+      "target": "olfactory_al",
+      "weight": 74059,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "lateral_horn",
+      "target": "integration_hub",
+      "weight": 72473,
+      "dominant_nt": "GABA"
+    },
+    {
+      "source": "visual",
+      "target": "integration_hub",
+      "weight": 70195,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "arousal_stress",
+      "target": "visual",
+      "weight": 62694,
+      "dominant_nt": "OCT"
+    },
+    {
+      "source": "integration_hub",
+      "target": "cx_sleep",
+      "weight": 57199,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "integration_hub",
+      "target": "lateral_horn",
+      "weight": 56806,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "lateral_horn",
+      "target": "lateral_horn",
+      "weight": 48669,
+      "dominant_nt": "GABA"
+    },
+    {
+      "source": "integration_hub",
+      "target": "descending_motor",
+      "weight": 42625,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "mb_output",
+      "target": "mb_output",
+      "weight": 41974,
+      "dominant_nt": "GABA"
+    },
+    {
+      "source": "integration_hub",
+      "target": "mb_output",
+      "weight": 38898,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "integration_hub",
+      "target": "mb_dan",
+      "weight": 38225,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "mb_kenyon",
+      "target": "mb_dan",
+      "weight": 36403,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "mb_dan",
+      "target": "mb_output",
+      "weight": 24996,
+      "dominant_nt": "DA"
+    },
+    {
+      "source": "lateral_horn",
+      "target": "olfactory_al",
+      "weight": 22645,
+      "dominant_nt": "GABA"
+    },
+    {
+      "source": "integration_hub",
+      "target": "visual",
+      "weight": 20979,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "olfactory_al",
+      "target": "mechanosensory",
+      "weight": 20945,
+      "dominant_nt": "GABA"
+    },
+    {
+      "source": "mb_dan",
+      "target": "mb_kenyon",
+      "weight": 19453,
+      "dominant_nt": "DA"
+    },
+    {
+      "source": "descending_motor",
+      "target": "integration_hub",
+      "weight": 18065,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "cx_sleep",
+      "target": "cx_navigation",
+      "weight": 17303,
+      "dominant_nt": "DA"
+    },
+    {
+      "source": "descending_motor",
+      "target": "visual",
+      "weight": 17090,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "olfactory_al",
+      "target": "descending_motor",
+      "weight": 15375,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "visual",
+      "target": "arousal_stress",
+      "weight": 14998,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "gustatory",
+      "target": "gustatory",
+      "weight": 13398,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "visual",
+      "target": "mb_kenyon",
+      "weight": 13229,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "cx_sleep",
+      "target": "integration_hub",
+      "weight": 11599,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "mb_output",
+      "target": "mb_dan",
+      "weight": 10974,
+      "dominant_nt": "DA"
+    },
+    {
+      "source": "mb_output",
+      "target": "lateral_horn",
+      "weight": 10308,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "mechanosensory",
+      "target": "mechanosensory",
+      "weight": 10053,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "descending_motor",
+      "target": "arousal_stress",
+      "weight": 8559,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "descending_motor",
+      "target": "feeding_motor",
+      "weight": 8332,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "mb_dan",
+      "target": "integration_hub",
+      "weight": 7867,
+      "dominant_nt": "DA"
+    },
+    {
+      "source": "arousal_stress",
+      "target": "olfactory_al",
+      "weight": 7656,
+      "dominant_nt": "OCT"
+    },
+    {
+      "source": "olfactory_al",
+      "target": "mb_output",
+      "weight": 6481,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "mb_output",
+      "target": "olfactory_al",
+      "weight": 5939,
+      "dominant_nt": "GABA"
+    },
+    {
+      "source": "descending_motor",
+      "target": "mechanosensory",
+      "weight": 5805,
+      "dominant_nt": "GABA"
+    },
+    {
+      "source": "cx_sleep",
+      "target": "descending_motor",
+      "weight": 5594,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "gustatory",
+      "target": "integration_hub",
+      "weight": 5562,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "feeding_motor",
+      "target": "feeding_motor",
+      "weight": 5196,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "arousal_stress",
+      "target": "integration_hub",
+      "weight": 5092,
+      "dominant_nt": "OCT"
+    },
+    {
+      "source": "integration_hub",
+      "target": "neurosecretory",
+      "weight": 5055,
+      "dominant_nt": "GLUT"
+    },
+    {
+      "source": "gustatory",
+      "target": "descending_motor",
+      "weight": 4784,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "lateral_horn",
+      "target": "mb_output",
+      "weight": 4129,
+      "dominant_nt": "GABA"
+    },
+    {
+      "source": "arousal_stress",
+      "target": "descending_motor",
+      "weight": 3935,
+      "dominant_nt": "OCT"
+    },
+    {
+      "source": "olfactory_al",
+      "target": "mb_dan",
+      "weight": 3883,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "descending_motor",
+      "target": "olfactory_al",
+      "weight": 3873,
+      "dominant_nt": "DA"
+    },
+    {
+      "source": "mb_output",
+      "target": "cx_sleep",
+      "weight": 3837,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "olfactory_al",
+      "target": "arousal_stress",
+      "weight": 3451,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "integration_hub",
+      "target": "arousal_stress",
+      "weight": 3290,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "olfactory_al",
+      "target": "visual",
+      "weight": 3151,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "mb_output",
+      "target": "descending_motor",
+      "weight": 3120,
+      "dominant_nt": "GABA"
+    },
+    {
+      "source": "descending_motor",
+      "target": "gustatory",
+      "weight": 3082,
+      "dominant_nt": "GABA"
+    },
+    {
+      "source": "integration_hub",
+      "target": "olfactory_al",
+      "weight": 2892,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "mb_output",
+      "target": "arousal_stress",
+      "weight": 2588,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "lateral_horn",
+      "target": "mb_dan",
+      "weight": 2415,
+      "dominant_nt": "GABA"
+    },
+    {
+      "source": "mechanosensory",
+      "target": "feeding_motor",
+      "weight": 2199,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "integration_hub",
+      "target": "cx_navigation",
+      "weight": 2187,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "lateral_horn",
+      "target": "mb_kenyon",
+      "weight": 2076,
+      "dominant_nt": "GABA"
+    },
+    {
+      "source": "integration_hub",
+      "target": "mb_kenyon",
+      "weight": 1976,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "cx_sleep",
+      "target": "visual",
+      "weight": 1660,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "arousal_stress",
+      "target": "mb_output",
+      "weight": 1575,
+      "dominant_nt": "OCT"
+    },
+    {
+      "source": "cx_navigation",
+      "target": "arousal_stress",
+      "weight": 1531,
+      "dominant_nt": "GABA"
+    },
+    {
+      "source": "visual",
+      "target": "cx_navigation",
+      "weight": 1500,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "mb_output",
+      "target": "visual",
+      "weight": 1486,
+      "dominant_nt": "GABA"
+    },
+    {
+      "source": "arousal_stress",
+      "target": "cx_navigation",
+      "weight": 1462,
+      "dominant_nt": "OCT"
+    },
+    {
+      "source": "arousal_stress",
+      "target": "cx_sleep",
+      "weight": 1441,
+      "dominant_nt": "OCT"
+    },
+    {
+      "source": "gustatory",
+      "target": "olfactory_al",
+      "weight": 1434,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "visual",
+      "target": "cx_sleep",
+      "weight": 1284,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "arousal_stress",
+      "target": "lateral_horn",
+      "weight": 1263,
+      "dominant_nt": "OCT"
+    },
+    {
+      "source": "mb_dan",
+      "target": "mb_dan",
+      "weight": 1263,
+      "dominant_nt": "DA"
+    },
+    {
+      "source": "mechanosensory",
+      "target": "arousal_stress",
+      "weight": 1192,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "cx_navigation",
+      "target": "integration_hub",
+      "weight": 1060,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "mb_dan",
+      "target": "olfactory_al",
+      "weight": 926,
+      "dominant_nt": "DA"
+    },
+    {
+      "source": "olfactory_al",
+      "target": "cx_sleep",
+      "weight": 910,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "mechanosensory",
+      "target": "visual",
+      "weight": 897,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "cx_sleep",
+      "target": "mb_dan",
+      "weight": 884,
+      "dominant_nt": "GLUT"
+    },
+    {
+      "source": "arousal_stress",
+      "target": "arousal_stress",
+      "weight": 877,
+      "dominant_nt": "OCT"
+    },
+    {
+      "source": "mb_dan",
+      "target": "lateral_horn",
+      "weight": 821,
+      "dominant_nt": "DA"
+    },
+    {
+      "source": "descending_motor",
+      "target": "neurosecretory",
+      "weight": 805,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "lateral_horn",
+      "target": "arousal_stress",
+      "weight": 730,
+      "dominant_nt": "GABA"
+    },
+    {
+      "source": "neurosecretory",
+      "target": "neurosecretory",
+      "weight": 709,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "visual",
+      "target": "lateral_horn",
+      "weight": 702,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "visual",
+      "target": "mb_output",
+      "weight": 663,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "mb_dan",
+      "target": "cx_sleep",
+      "weight": 606,
+      "dominant_nt": "DA"
+    },
+    {
+      "source": "cx_sleep",
+      "target": "mb_output",
+      "weight": 600,
+      "dominant_nt": "GABA"
+    },
+    {
+      "source": "feeding_motor",
+      "target": "descending_motor",
+      "weight": 595,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "descending_motor",
+      "target": "cx_sleep",
+      "weight": 562,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "descending_motor",
+      "target": "cx_navigation",
+      "weight": 551,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "descending_motor",
+      "target": "mb_dan",
+      "weight": 505,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "visual",
+      "target": "olfactory_al",
+      "weight": 458,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "cx_sleep",
+      "target": "arousal_stress",
+      "weight": 440,
+      "dominant_nt": "DA"
+    },
+    {
+      "source": "visual",
+      "target": "mb_dan",
+      "weight": 439,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "descending_motor",
+      "target": "mb_output",
+      "weight": 425,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "mechanosensory",
+      "target": "neurosecretory",
+      "weight": 391,
+      "dominant_nt": "SER"
+    },
+    {
+      "source": "cx_navigation",
+      "target": "descending_motor",
+      "weight": 346,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "lateral_horn",
+      "target": "descending_motor",
+      "weight": 316,
+      "dominant_nt": "GABA"
+    },
+    {
+      "source": "descending_motor",
+      "target": "lateral_horn",
+      "weight": 299,
+      "dominant_nt": "DA"
+    },
+    {
+      "source": "lateral_horn",
+      "target": "cx_sleep",
+      "weight": 299,
+      "dominant_nt": "GABA"
+    },
+    {
+      "source": "cx_navigation",
+      "target": "visual",
+      "weight": 213,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "lateral_horn",
+      "target": "visual",
+      "weight": 191,
+      "dominant_nt": "GABA"
+    },
+    {
+      "source": "mb_output",
+      "target": "cx_navigation",
+      "weight": 191,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "arousal_stress",
+      "target": "mb_dan",
+      "weight": 190,
+      "dominant_nt": "OCT"
+    },
+    {
+      "source": "neurosecretory",
+      "target": "descending_motor",
+      "weight": 147,
+      "dominant_nt": "SER"
+    },
+    {
+      "source": "olfactory_al",
+      "target": "cx_navigation",
+      "weight": 138,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "arousal_stress",
+      "target": "neurosecretory",
+      "weight": 128,
+      "dominant_nt": "OCT"
+    },
+    {
+      "source": "visual",
+      "target": "neurosecretory",
+      "weight": 123,
+      "dominant_nt": "GLUT"
+    },
+    {
+      "source": "neurosecretory",
+      "target": "integration_hub",
+      "weight": 118,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "integration_hub",
+      "target": "gustatory",
+      "weight": 106,
+      "dominant_nt": "GABA"
+    },
+    {
+      "source": "mb_dan",
+      "target": "arousal_stress",
+      "weight": 105,
+      "dominant_nt": "DA"
+    },
+    {
+      "source": "mb_kenyon",
+      "target": "integration_hub",
+      "weight": 103,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "arousal_stress",
+      "target": "mb_kenyon",
+      "weight": 94,
+      "dominant_nt": "OCT"
+    },
+    {
+      "source": "arousal_stress",
+      "target": "mechanosensory",
+      "weight": 73,
+      "dominant_nt": "OCT"
+    },
+    {
+      "source": "olfactory_al",
+      "target": "neurosecretory",
+      "weight": 69,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "arousal_stress",
+      "target": "feeding_motor",
+      "weight": 50,
+      "dominant_nt": "OCT"
+    },
+    {
+      "source": "mb_kenyon",
+      "target": "olfactory_al",
+      "weight": 45,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "gustatory",
+      "target": "arousal_stress",
+      "weight": 34,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "mb_dan",
+      "target": "descending_motor",
+      "weight": 33,
+      "dominant_nt": "DA"
+    },
+    {
+      "source": "cx_navigation",
+      "target": "mb_output",
+      "weight": 32,
+      "dominant_nt": "DA"
+    },
+    {
+      "source": "cx_sleep",
+      "target": "lateral_horn",
+      "weight": 26,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "mb_kenyon",
+      "target": "lateral_horn",
+      "weight": 26,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "integration_hub",
+      "target": "feeding_motor",
+      "weight": 21,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "neurosecretory",
+      "target": "visual",
+      "weight": 18,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "mechanosensory",
+      "target": "integration_hub",
+      "weight": 15,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "mb_kenyon",
+      "target": "arousal_stress",
+      "weight": 13,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "olfactory_al",
+      "target": "gustatory",
+      "weight": 13,
+      "dominant_nt": "GABA"
+    },
+    {
+      "source": "feeding_motor",
+      "target": "mechanosensory",
+      "weight": 12,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "cx_navigation",
+      "target": "mb_dan",
+      "weight": 12,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "mb_dan",
+      "target": "cx_navigation",
+      "weight": 11,
+      "dominant_nt": "DA"
+    },
+    {
+      "source": "mb_dan",
+      "target": "visual",
+      "weight": 11,
+      "dominant_nt": "DA"
+    },
+    {
+      "source": "mb_kenyon",
+      "target": "descending_motor",
+      "weight": 10,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "neurosecretory",
+      "target": "mechanosensory",
+      "weight": 6,
+      "dominant_nt": "SER"
+    },
+    {
+      "source": "gustatory",
+      "target": "neurosecretory",
+      "weight": 6,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "cx_navigation",
+      "target": "olfactory_al",
+      "weight": 6,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "cx_sleep",
+      "target": "olfactory_al",
+      "weight": 5,
+      "dominant_nt": "DA"
+    },
+    {
+      "source": "visual",
+      "target": "mechanosensory",
+      "weight": 5,
+      "dominant_nt": "ACH"
+    },
+    {
+      "source": "arousal_stress",
+      "target": "gustatory",
+      "weight": 5,
+      "dominant_nt": "OCT"
+    }
+  ],
+  "honesty_note": "This is a compressed, game-ready aggregation of the real FlyWire FAFB v783 connectome, not a full per-neuron, per-synapse real-time simulation. Every neuron in the dataset was assigned to exactly one of the modules above (or left unassigned) based on its real FlyWire classification, dominant neuropil, or predicted neurotransmitter; edge weights are real summed synapse counts between the neurons in each module pair."
+}
