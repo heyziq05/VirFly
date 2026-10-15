@@ -92,7 +92,7 @@ src/
   audio/audio.js                sound effects made in code (no audio files)
   store.js                      shared app state and autosave
   utils/save.js                 saving in the browser, file downloads
-legacy/                         the previous version of the game, kept for reference
+
 ```
 
 There are no image or sound files. Everything is generated in code when the page loads.
