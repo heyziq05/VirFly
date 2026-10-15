@@ -4,6 +4,24 @@ A virtual fruit fly (*Drosophila melanogaster*) living in a small glass dish. Yo
 
 *Lalat* is Malay for "fly".
 
+## Tech stack
+
+| Tool | What it's used for |
+| --- | --- |
+| **Vite** | Development server with instant reload (`npm run dev`) and the production build (`npm run build` → `dist/`) |
+| **React 18** | Builds the interface: header, toolbar, side panel tabs, help card |
+| **three.js** | The 3D engine: draws the fly, dish, food, lighting, shadows and materials (wing sheen, glass, droplets) |
+| **React Three Fiber** | Lets the 3D scene be written as React components and runs the per-frame animation loop |
+| **drei** | Ready-made 3D helpers: camera orbit/zoom controls and the studio lighting used for reflections |
+| **zustand** | Small state store shared by the 3D scene and the interface (selected tool, camera mode, live readouts) |
+| **Web Audio API** | All sound effects (air puff, wingbeat, clicks) are generated in code, no audio files |
+| **Canvas 2D API** | Generates every texture at start-up (eye facets, wing veins, fruit, filter paper) and draws the charts in the side panel |
+| **localStorage** | Saves your session in the browser so the fly is still there next time |
+| **IBM Plex Sans / Mono** | Fonts, loaded from Google Fonts |
+| **Python + pandas** | Offline only: `scripts/preprocess_flywire.py` turns the raw FlyWire CSV exports into `src/data/brain-model.json` |
+| **FlyWire FAFB v783** | The real fruit fly brain map the brain model is built from |
+| **GitHub Actions + GitHub Pages** | Builds the site and publishes it on every push to `main` |
+
 ## Running it
 
 You need Node.js 18 or newer.
