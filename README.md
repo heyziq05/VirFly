@@ -2,7 +2,6 @@
 
 A virtual fruit fly (*Drosophila melanogaster*) living in a small glass dish. You look after it like a pet, and it decides what to do using a simple model built from a real map of a fruit fly's brain.
 
-*Lalat* is Malay for "fly".
 
 ## Tech stack
 
